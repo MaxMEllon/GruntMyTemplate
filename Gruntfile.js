@@ -16,6 +16,8 @@ module.exports = function(grunt) {
     },
     coffee: {
       build: {
+        src: "src/coffee/hoge.slim",
+        dest: 'build/script/hoge.html'
       }
     },
     csslint: {
@@ -25,7 +27,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: 'src/**/*',
-      tasks: ['sass', 'slim', 'csslint']
+      tasks: ['sass', 'slim', 'coffee', 'csslint']
     },
     connect: {
       server: {
@@ -45,5 +47,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   //tasks
-  grunt.registerTask('default', ['sass', 'slim', 'csslint', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'slim', 'coffee', 'csslint', 'connect', 'watch']);
 }
