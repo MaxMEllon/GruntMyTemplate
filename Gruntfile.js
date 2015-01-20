@@ -11,13 +11,13 @@ module.exports = function(grunt) {
     slim: {
       build: {
         src: "src/slim/index.slim",
-        dest: 'build/view/index.html'
+        dest: 'index.html'
       }
     },
     coffee: {
       build: {
-        src: "src/coffee/hoge.slim",
-        dest: 'build/script/hoge.html'
+        src: "src/coffee/hoge.coffee",
+        dest: 'build/script/hoge.js'
       }
     },
     csslint: {
