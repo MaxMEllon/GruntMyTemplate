@@ -8,8 +8,10 @@
   },
   "repository": "",
   "author": "",
-  "license": "BSD",
+  "license": "",
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.5",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-less": "^1.0.0"
   }
 }
